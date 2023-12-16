@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import VideoPlayer from './components/VideoPlayer';
+import './App.css'
 function App() {
+  const videoId = 'KjGxeZvj824';
+  const apiKey = 'AIzaSyCw3XHZQYCIPfBcBQHaTGg9Kn-wtthJkCM';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>YouTube Video App</h1>
+      <VideoPlayer videoId={videoId} apiKey={apiKey} />
     </div>
   );
 }
 
 export default App;
+
+// Vf0h9XupE
+// https://www.youtube.com/watch?v=Vf0h9XupE-c&ab_channel=Kaka
